@@ -1,5 +1,5 @@
 import './Menu.css'
-
+import {Link} from 'react-router-dom';
 
 
 function Menu() {
@@ -9,7 +9,10 @@ function Menu() {
         <div className="container">
             <nav className='menu'>
                 <ul className='menu__list'>
-                    <li className='menu__list__item'>Home</li>
+                    <li className='menu__list__item'>
+                        <Link to="/">Home</Link>
+                        {/*<Link to="/">Projects</Link>*/}
+                    </li>
                 </ul>
             </nav>
         </div>
