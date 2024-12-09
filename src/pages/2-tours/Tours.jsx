@@ -5,14 +5,14 @@ import {useEffect, useState} from "react";
 import ToursData from "./Tours-data";
 //component
 import Loading from "../../components/Loading/Loading";
+import TourBox from "../../components/Tour/TourBox";
 
 
-const url = 'https://course-api.com/react-tours-project'
 
 function Tours () {
 
     const [loading, setLoading] = useState(false);
-    const [tour, setTours] = useState(ToursData);
+    const [tours, setTours] = useState(ToursData);
 
 
     return(
@@ -23,7 +23,7 @@ function Tours () {
                 </main>
                 :
                 <main>
-                    Tours List
+                    <TourBox data={tours}></TourBox>
                 </main>}
         </>
     )
