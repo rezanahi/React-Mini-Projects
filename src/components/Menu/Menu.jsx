@@ -6,7 +6,7 @@ function Menu() {
 
 
     return(
-        <div className="container">
+        <div className="w-full bg-white px-6 py-2">
             <nav className='menu'>
                 <ul className='menu__list'>
                     <li className='menu__list__item'>
