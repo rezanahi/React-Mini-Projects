@@ -5,7 +5,7 @@ import {useEffect, useState} from "react";
 import ToursData from "./Tours-data";
 //component
 import Loading from "../../components/Loading/Loading";
-import TourBox from "../../components/Tour/TourBox";
+import TourBox from "../../components/TourBox/TourBox";
 
 
 
@@ -14,16 +14,30 @@ function Tours () {
     const [loading, setLoading] = useState(false);
     const [tours, setTours] = useState(ToursData);
 
+    function removeTourHandler (id) {
+        const newTours = tours.filter((tour) => {
+            return tour.id !== id
+        })
+        setTours(newTours)
+    }
+
+    function refreshHandler () {
+        setTours(ToursData)
+    }
 
     return(
         <>
             {loading ?
-                <main>
+                <main className='p2-main'>
                     <Loading></Loading>
                 </main>
                 :
-                <main>
-                    <TourBox data={tours}></TourBox>
+                <main className='p2-main'>
+                    <TourBox
+                        refreshHandler={refreshHandler}
+                        removeTourHandler={removeTourHandler}
+                        data={tours}>
+                    </TourBox>
                 </main>}
         </>
     )
