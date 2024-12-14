@@ -1,6 +1,6 @@
 import './Review.css'
 import './Review-media.css'
-import {useState} from "react";
+import {useReducer, useState} from "react";
 
 import ReviewsData from '../../pages/3-reviews/ReviewsData'
 
@@ -8,28 +8,51 @@ import ReviewsData from '../../pages/3-reviews/ReviewsData'
 import { FaQuoteRight, FaChevronLeft, FaChevronRight} from "react-icons/fa";
 
 function Review () {
-    const [index, setIndex] = useState(0)
+
+    const [index, dispatch] = useReducer(ReviewReducer, 0)
     const reviewData = ReviewsData[index]
 
-    function nextReviewHandler() {
-        if (index === ReviewsData.length - 1) {
-            setIndex(0)
-        } else {
-            setIndex(prevState => prevState + 1)
+    function ReviewReducer (index, action) {
+        switch (action.type) {
+            case 'nextReview' :
+                if (index === ReviewsData.length - 1) {
+                    return 0
+                } else {
+                    return index + 1
+                }
+            case 'previousReview' :
+                if(index === 0) {
+                    return ReviewsData.length - 1
+                } else {
+                    return index - 1
+                }
+            case 'randomReview' :
+                let randomNumber = Math.floor(Math.random() * ReviewsData.length);
+                while (randomNumber === index) {
+                    randomNumber = Math.floor(Math.random() * ReviewsData.length);
+                }
+                return randomNumber
+            default :
+                return 0
         }
+    }
+
+    function nextReviewHandler() {
+        dispatch({
+            type: 'nextReview'
+        })
     }
 
     function previousReviewHandler() {
-        if(index === 0) {
-            setIndex(ReviewsData.length - 1)
-        } else {
-            setIndex(prevState => prevState - 1)
-        }
+        dispatch({
+            type: 'previousReview'
+        })
     }
 
     function randomReviewHandler() {
-        const randomNumber = Math.floor(Math.random() * ReviewsData.length);
-        setIndex(randomNumber)
+        dispatch({
+            type: 'randomReview'
+        })
     }
 
     return(
