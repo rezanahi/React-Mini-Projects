@@ -7,12 +7,14 @@ import Menu from './components/Menu/Menu'
 import Birthday from './pages/1-birthday/Birthday'
 import Tours from './pages/2-tours/Tours'
 import Reviews from "./pages/3-reviews/Reviews";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
     <BrowserRouter>
       <Menu></Menu>
         <Routes>
+            <Route path="/" element={<Home />} />
             <Route path="/1-birthday" element={<Birthday />} />
             <Route path="/2-Tours" element={<Tours />} />
             <Route path="/3-Reviews" element={<Reviews />} />
