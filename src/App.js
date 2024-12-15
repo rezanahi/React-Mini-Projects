@@ -9,6 +9,7 @@ import Tours from './pages/2-tours/Tours'
 import Reviews from "./pages/3-reviews/Reviews";
 import Home from "./pages/Home/Home";
 import Accordion from "./pages/4-accordion/Accordion";
+import FoodMenu from "./pages/5-menu/FoodMenu";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/2-tours" element={<Tours />} />
             <Route path="/3-reviews" element={<Reviews />} />
             <Route path="/4-accordion" element={<Accordion />} />
+            <Route path="/5-foodmenu" element={<FoodMenu />} />
         </Routes>
     </BrowserRouter>
   );
