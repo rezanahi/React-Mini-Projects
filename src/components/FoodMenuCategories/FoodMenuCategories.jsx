@@ -3,12 +3,22 @@ import './FoodMenuCategories-media.css'
 
 
 
-function FoodMenuCategories () {
+function FoodMenuCategories ({filterItems, categories}) {
 
 
     return(
         <>
-            FoodMenuCategories
+            <div className='p5-btn-container'>
+                {
+                    categories.map((category, index) => {
+                        return (
+                            <button className='p5-filter-btn' onClick={() => {filterItems(category)}} key={index}>
+                                {category}
+                            </button>
+                        )
+                    })
+                }
+            </div>
         </>
     )
 }

@@ -70,7 +70,11 @@
     margin-bottom: 0;
     padding-top: 1rem;
 }
-
+.p5-section {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: var(--max-width);
+}
 @media screen and (min-width: 768px) {
     .p5-menu-item {
         grid-template-columns: 225px 1fr;
@@ -88,5 +92,10 @@
     }
     .p5-photo {
         height: 150px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .p5-section {
+        width: 95vw;
     }
 }
