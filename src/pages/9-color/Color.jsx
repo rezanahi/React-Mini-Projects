@@ -1,5 +1,5 @@
 import './Color.css'
-
+import Values from 'values.js'
 
 function Color () {
 
