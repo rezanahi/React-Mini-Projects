@@ -1,6 +1,7 @@
 import './Color.css'
 import Values from 'values.js'
 import {useState} from "react";
+import SingleColor from "../../components/SingleColor/SingleColor";
 
 function Color () {
     const [color, setColor] = useState('')
@@ -11,6 +12,7 @@ function Color () {
         e.preventDefault()
         try{
             let colors = new Values(color).all(10)
+            setList(colors)
         } catch (err) {
             setError(true)
         }
@@ -31,7 +33,9 @@ function Color () {
                 </form>
             </section>
             <section className='p9-colors'>
-
+                {list.map((color, index) => {
+                    return <SingleColor key={index} {...color} index={index}></SingleColor>
+                })}
             </section>
         </>
     )

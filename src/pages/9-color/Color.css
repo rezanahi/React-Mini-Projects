@@ -66,10 +66,10 @@
 }
 .p9-percent-value {
     margin-bottom: 0;
-    color: var(--clr-grey-1);
+    color: var(--clr-black);
 }
 .p9-color-value {
-    color: var(--clr-grey-1);
+    color: var(--clr-black);
     margin-bottom: 0;
 }
 .p9-color-light .p9-color-value {
