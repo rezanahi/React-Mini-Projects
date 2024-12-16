@@ -1,6 +1,6 @@
 import './Slider.css'
 import peopleData from "./SliderData";
-import {useState, useEffect} from "react";
+import {useState, useEffect, useCallback} from "react";
 import {FaQuoteRight} from "react-icons/fa";
 import {FiChevronLeft, FiChevronRight} from "react-icons/fi";
 
@@ -24,6 +24,20 @@ function Slider () {
             setIndex(index => index - 1)
         }
     }
+
+    useEffect(() => {
+        let timer = setInterval(() => {
+            if(index === peopleData.length - 1) {
+                setIndex(0)
+            } else {
+                setIndex(index => index + 1)
+            }
+        }, 2000)
+
+        return function () {
+            clearInterval(timer);
+        }
+    }, [index])
 
     return(
         <>
