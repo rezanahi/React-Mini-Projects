@@ -11,6 +11,7 @@ import Home from "./pages/Home/Home";
 import Accordion from "./pages/4-accordion/Accordion";
 import FoodMenu from "./pages/5-menu/FoodMenu";
 import Tabs from "./pages/6-tabs/Tabs";
+import Slider from "./pages/7-slider/Slider";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/4-accordion" element={<Accordion />} />
             <Route path="/5-foodmenu" element={<FoodMenu />} />
             <Route path="/6-tabs" element={<Tabs />} />
+            <Route path="/7-slider" element={<Slider />} />
         </Routes>
     </BrowserRouter>
   );

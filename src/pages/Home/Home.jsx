@@ -16,6 +16,7 @@ function Home () {
                 <li><Link to="/4-accordion">4-accordion</Link></li>
                 <li><Link to="/5-foodmenu">5-Food Menu</Link></li>
                 <li><Link to="/6-tabs">6-tabs</Link></li>
+                <li><Link to="/7-slider">7-slider</Link></li>
             </ul>
         </>
     )
