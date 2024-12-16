@@ -1,4 +1,4 @@
-const people = [
+const peopleData = [
     {
         id: 1,
         image: 'https://www.course-api.com/images/people/person-1.jpeg',
@@ -33,4 +33,4 @@ const people = [
     },
 ];
 
-export default people;
+export default peopleData;
