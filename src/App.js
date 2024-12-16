@@ -12,6 +12,7 @@ import Accordion from "./pages/4-accordion/Accordion";
 import FoodMenu from "./pages/5-menu/FoodMenu";
 import Tabs from "./pages/6-tabs/Tabs";
 import Slider from "./pages/7-slider/Slider";
+import Lorem from "./pages/8-lorem/Lorem";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/5-foodmenu" element={<FoodMenu />} />
             <Route path="/6-tabs" element={<Tabs />} />
             <Route path="/7-slider" element={<Slider />} />
+            <Route path="/8-lorem" element={<Lorem />} />
         </Routes>
     </BrowserRouter>
   );
