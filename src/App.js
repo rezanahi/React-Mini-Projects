@@ -13,6 +13,7 @@ import FoodMenu from "./pages/5-menu/FoodMenu";
 import Tabs from "./pages/6-tabs/Tabs";
 import Slider from "./pages/7-slider/Slider";
 import Lorem from "./pages/8-lorem/Lorem";
+import Color from "./pages/9-color/Color";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/6-tabs" element={<Tabs />} />
             <Route path="/7-slider" element={<Slider />} />
             <Route path="/8-lorem" element={<Lorem />} />
+            <Route path="/9-color" element={<Color />} />
         </Routes>
     </BrowserRouter>
   );
