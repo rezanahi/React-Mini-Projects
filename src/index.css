@@ -10,7 +10,7 @@ Variables
 
 :root {
   /* dark shades of primary color*/
-  --clr-primary-1: hsl(162, 61%, 89%);
+  --clr-primary-1: hsl(160, 12%, 15%);
   --clr-primary-2: hsl(162, 60%, 78%);
   --clr-primary-3: hsl(162, 61%, 67%);
   --clr-primary-4: hsl(162, 61%, 57%);
@@ -19,11 +19,11 @@ Variables
   /* lighter shades of primary color */
   --clr-primary-6: #1aa179;
   --clr-primary-7: #13795b;
-  --clr-primary-8: #0d503c;
+  --clr-primary-8: #77d1c8;
   --clr-primary-9: #06281e;
   --clr-primary-10: hsl(205, 100%, 96%);
   /* darkest grey - used for headings */
-  --clr-grey-1: hsl(212, 33%, 89%);
+  --clr-grey-1: hsl(180, 2%, 12%);
   --clr-grey-2: hsl(210, 31%, 80%);
   --clr-grey-3: hsl(211, 27%, 70%);
   --clr-grey-4: hsl(209, 23%, 60%);
