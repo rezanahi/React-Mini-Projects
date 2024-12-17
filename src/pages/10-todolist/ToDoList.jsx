@@ -11,6 +11,20 @@ function ToDoList () {
     const [isEditing, setIsEditing] = useState(false)
     const [editId, setEditId] = useState(null)
     const [alert, setAlert] = useState({show: false, msg: '', type: ''})
+    const [firstTime, setFirstTime] = useState(true)
+
+    useEffect(() => {
+            if(localStorage.getItem("myList")) {
+                setList(JSON.parse(localStorage.getItem("myList")))
+            }
+            setFirstTime(false)
+    }, [])
+
+    useEffect(() => {
+        if(!firstTime) {
+            localStorage.setItem('myList', JSON.stringify(list))
+        }
+    }, [list, firstTime])
 
     useEffect(() => {
         let timer = setTimeout(() => {
