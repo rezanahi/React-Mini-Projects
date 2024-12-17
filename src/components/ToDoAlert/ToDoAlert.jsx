@@ -1,11 +1,13 @@
 import './ToDoAlert.css'
 
 
-function ToDoAlert() {
+function ToDoAlert({msg, type}) {
 
     return(
         <>
-            ToDoAlert
+            <p className={`p10-alert p10-alert-${type}`}>
+                {msg}
+            </p>
         </>
     )
 }
