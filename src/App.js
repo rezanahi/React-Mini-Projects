@@ -14,6 +14,7 @@ import Tabs from "./pages/6-tabs/Tabs";
 import Slider from "./pages/7-slider/Slider";
 import Lorem from "./pages/8-lorem/Lorem";
 import Color from "./pages/9-color/Color";
+import ToDoList from "./pages/10-todolist/ToDoList";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path="/7-slider" element={<Slider />} />
             <Route path="/8-lorem" element={<Lorem />} />
             <Route path="/9-color" element={<Color />} />
+            <Route path="/10-todolist" element={<ToDoList />} />
         </Routes>
     </BrowserRouter>
   );

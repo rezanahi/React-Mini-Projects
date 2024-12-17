@@ -42,6 +42,7 @@ Variables
   --clr-red-special: #b4345c;
   --clr-grey-special: #eae6eb;
   --clr-gold: #c59d5f;
+  --clr-grey-10: hsl(210, 36%, 96%);
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
   --radius: 0.25rem;
