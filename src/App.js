@@ -15,6 +15,7 @@ import Slider from "./pages/7-slider/Slider";
 import Lorem from "./pages/8-lorem/Lorem";
 import Color from "./pages/9-color/Color";
 import ToDoList from "./pages/10-todolist/ToDoList";
+import NavBarProject from "./pages/11-navbar-project/NavBarProject";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             <Route path="/8-lorem" element={<Lorem />} />
             <Route path="/9-color" element={<Color />} />
             <Route path="/10-todolist" element={<ToDoList />} />
+            <Route path="/11-navbar" element={<NavBarProject />} />
         </Routes>
     </BrowserRouter>
   );

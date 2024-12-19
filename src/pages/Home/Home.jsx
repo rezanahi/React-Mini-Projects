@@ -20,6 +20,7 @@ function Home () {
                 <li><Link to="/8-lorem">8-lorem</Link></li>
                 <li><Link to="/9-color">9-color</Link></li>
                 <li><Link to="/10-todolist">10-todolist</Link></li>
+                <li><Link to="/11-navbar">11-navbar</Link></li>
             </ul>
         </>
     )

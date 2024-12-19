@@ -1,0 +1,101 @@
+.p11-section {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: var(--max-width);
+}
+@media screen and (min-width: 992px) {
+    .p11-section {
+        width: 95vw;
+    }
+}
+.p11-nav {
+    background: var(--clr-white);
+    box-shadow: var(--light-shadow);
+}
+.p11-nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.p11-nav-toggle {
+    font-size: 1.5rem;
+    color: var(--clr-primary-5);
+    background: transparent;
+    border-color: transparent;
+    transition: var(--transition);
+    cursor: pointer;
+}
+.p11-nav-toggle:hover {
+    color: var(--clr-primary-1);
+    transform: rotate(90deg);
+}
+.p11-logo {
+    height: 40px;
+}
+.p11-links a {
+    color: var(--clr-grey-3);
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: var(--transition);
+}
+.p11-links a:hover {
+    background: var(--clr-primary-8);
+    color: var(--clr-primary-5);
+    padding-left: 1.5rem;
+}
+.p11-social-icons {
+    display: none;
+}
+.p11-links-container {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+.p11-show-container {
+    height: 10rem;
+}
+@media screen and (min-width: 800px) {
+    .p11-nav-center {
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    .p11-nav-header {
+        padding: 0;
+    }
+    .p11-nav-toggle {
+        display: none;
+    }
+    .p11-links-container {
+        height: auto !important;
+    }
+    .p11-links {
+        display: flex;
+    }
+    .p11-links a {
+        padding: 0;
+        margin: 0 0.5rem;
+    }
+    .p11-links a:hover {
+        padding: 0;
+        background: transparent;
+    }
+    .p11-social-icons {
+        display: flex;
+    }
+    .p11-social-icons a {
+        margin: 0 0.5rem;
+        color: var(--clr-primary-5);
+        transition: var(--transition);
+    }
+    .p11-social-icons a:hover {
+        color: var(--clr-primary-7);
+    }
+}
