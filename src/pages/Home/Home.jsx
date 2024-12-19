@@ -22,6 +22,7 @@ function Home () {
                 <li><Link to="/10-todolist">10-todolist</Link></li>
                 <li><Link to="/11-navbar">11-navbar</Link></li>
                 <li><Link to="/12-sidebar">12-sidebar</Link></li>
+                <li><Link to="/13-stripe">13-stripe</Link></li>
             </ul>
         </>
     )
