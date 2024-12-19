@@ -276,7 +276,7 @@ Stripe Styles
     transform: translateX(-50%);
 }
 
-.p13-submenu.show {
+.p13-submenu .p13-show {
     display: block;
 }
 
