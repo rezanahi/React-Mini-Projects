@@ -29,7 +29,8 @@ function Stripe () {
 
     return(
         <>
-            <StripeAppContext.Provider value={{isSidebarOpen, isModalOpen, openModal, closeModal, openSidebar, closeSidebar}}>
+            <StripeAppContext.Provider
+                value={{isSidebarOpen, isModalOpen, openModal, closeModal, openSidebar, closeSidebar}}>
                 <StripeNavbar></StripeNavbar>
                 <StripeSidebar></StripeSidebar>
                 <StripeHero></StripeHero>

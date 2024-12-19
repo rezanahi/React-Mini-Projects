@@ -197,7 +197,7 @@ Stripe Styles
     transform: scale(0);
     background: rgba(0, 0, 0, 0.5);
 }
-.p13-sidebar-wrapper.show {
+.p13-sidebar-show {
     visibility: visible;
     z-index: 2;
     transform: scale(1);
@@ -227,7 +227,7 @@ Stripe Styles
 }
 .p13-sidebar-sublinks {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
     row-gap: 0.25rem;
 }
 .p13-sidebar-sublinks a {

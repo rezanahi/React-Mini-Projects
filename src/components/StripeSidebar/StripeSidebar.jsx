@@ -6,10 +6,11 @@ import stripeSubLinks from '../../pages/13-stripe/StripeData'
 
 function StripeSidebar () {
     const {closeSidebar, isSidebarOpen} = useStripeAppContext()
+    console.log(isSidebarOpen)
 
     return(
         <>
-            <aside className={`${isSidebarOpen ? 'p13-sidebar-wrapper p13-show' :'p13-sidebar-wrapper'}`}>
+            <aside className={`${isSidebarOpen ? 'p13-sidebar-wrapper p13-sidebar-show' :'p13-sidebar-wrapper'}`}>
                 <div className='p13-sidebar'>
                     <button className='p13-close-btn' onClick={closeSidebar}>
                         <FaTimes></FaTimes>
