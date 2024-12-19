@@ -5,12 +5,14 @@ import StripeHero from "../../components/StripeHero/StripeHero";
 import StripeSidebar from "../../components/StripeSidebar/StripeSidebar";
 import {StripeAppContext} from "./context";
 import {useState} from "react";
+import stripeSubLinks from "./StripeData";
 
 
 function Stripe () {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [location, setLocation] = useState({})
+    const [page, setPage] = useState({page: '', links: []})
 
     function openSidebar () {
         setIsSidebarOpen(true);
@@ -23,7 +25,8 @@ function Stripe () {
     function openModal (page, coordinates) {
         setIsModalOpen(true)
         setLocation(coordinates)
-
+        const newPage = stripeSubLinks.find(item => item.page === page)
+        setPage(newPage)
     }
 
     function closeModal () {
@@ -33,7 +36,7 @@ function Stripe () {
     return(
         <>
             <StripeAppContext.Provider
-                value={{isSidebarOpen, isModalOpen, location, openModal, closeModal, openSidebar, closeSidebar}}>
+                value={{isSidebarOpen, isModalOpen, location, page, openModal, closeModal, openSidebar, closeSidebar}}>
                 <StripeNavbar></StripeNavbar>
                 <StripeSidebar></StripeSidebar>
                 <StripeHero></StripeHero>
