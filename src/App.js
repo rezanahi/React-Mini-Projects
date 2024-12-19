@@ -18,6 +18,7 @@ import ToDoList from "./pages/10-todolist/ToDoList";
 import NavBarProject from "./pages/11-navbar-project/NavBarProject";
 import SideBarProject from "./pages/12-sidebar-project/SideBarProject";
 import Stripe from "./pages/13-stripe/Stripe";
+import CartProject from "./pages/14-cart-project/CartProject";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
             <Route path="/11-navbar" element={<NavBarProject />} />
             <Route path="/12-sidebar" element={<SideBarProject />} />
             <Route path="/13-stripe" element={<Stripe />} />
+            <Route path="/14-cart" element={<CartProject />} />
         </Routes>
     </BrowserRouter>
   );

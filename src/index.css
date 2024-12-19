@@ -10,6 +10,9 @@ Variables
 
 :root {
   /* dark shades of primary color*/
+  --clr-primary: #2680c0;
+  --clr-primary-dark: hsl(205, 100%, 21%);
+  --clr-primary-light: hsl(205, 84%, 74%);
   --clr-primary-1: hsl(160, 12%, 15%);
   --clr-primary-2: hsl(162, 60%, 78%);
   --clr-primary-3: hsl(162, 61%, 67%);
