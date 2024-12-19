@@ -1,7 +1,7 @@
 import './CartItem.css'
 import {useCartContext} from "../../pages/14-cart-project/CartContext";
 
-function CartItem ({ id, img, title, price, amount }) {
+function CartItem ({ id, img, title, price, amount, dispatch }) {
 
     return(
         <>
@@ -15,7 +15,7 @@ function CartItem ({ id, img, title, price, amount }) {
                     {/* remove button */}
                     <button
                         className='p14-remove-btn'
-                        onClick={() => console.log('remove item')}
+                        onClick={() => dispatch({type: 'DeleteOneItem', id: id})}
                     >
                         remove
                     </button>

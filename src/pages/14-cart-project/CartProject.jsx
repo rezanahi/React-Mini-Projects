@@ -1,20 +1,21 @@
 import './CartProject.css'
 import CartContainer from "../../components/CartContainer/CartContainer";
 import CartNavbar from "../../components/CartNavbar/CartNavbar";
-import {useState} from "react";
+import {useReducer} from "react";
 import {CartContext} from "./CartContext";
 import CartProjectData from "./CartProjectData";
+import CartReducer from "./CartReducer";
 
 
 function CartProject () {
-    const [cart, setCart] = useState(CartProjectData)
+    const [cart, dispatch] = useReducer(CartReducer, CartProjectData);
 
     return(
         <>
             <CartContext.Provider value={{cart,}}>
                 <main className='block'>
                     <CartNavbar></CartNavbar>
-                    <CartContainer></CartContainer>
+                    <CartContainer dispatch={dispatch}></CartContainer>
                 </main>
             </CartContext.Provider>
         </>

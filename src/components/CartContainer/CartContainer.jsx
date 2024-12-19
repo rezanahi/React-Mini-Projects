@@ -3,8 +3,12 @@ import {useCartContext} from "../../pages/14-cart-project/CartContext";
 import CartItem from "../CartItem/CartItem";
 
 
-function CartContainer () {
+function CartContainer ({dispatch}) {
     const { cart } = useCartContext()
+    let total = 0
+    cart.forEach((cartItem) => {
+        total += (cartItem.price * cartItem.amount)
+    })
     if (cart.length === 0) {
         return (
             <section className='p14-cart'>
@@ -25,7 +29,7 @@ function CartContainer () {
             {/* cart items */}
             <div>
                 {cart.map((item) => {
-                    return <CartItem key={item.id} {...item} />
+                    return <CartItem dispatch={dispatch} key={item.id} {...item} />
                 })}
             </div>
             {/* cart footer */}
@@ -33,12 +37,12 @@ function CartContainer () {
                 <hr />
                 <div className='p14-cart-total'>
                     <h4>
-                        total <span>$0.00</span>
+                        total <span>${total}</span>
                     </h4>
                 </div>
                 <button
                     className='p14-btn p14-clear-btn'
-                    onClick={() => console.log('clear cart')}
+                    onClick={() => dispatch({type: 'DeleteAllItems'})}
                 >
                     clear cart
                 </button>
