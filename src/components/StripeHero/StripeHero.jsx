@@ -7,7 +7,7 @@ function StripeHero () {
 
     return(
         <>
-            <section className='p13-hero'>
+            <section className='p13-hero' onMouseOver={closeModal}>
                 <div className='p13-hero-center'>
                     <article className='p13-hero-info'>
                         <h1>

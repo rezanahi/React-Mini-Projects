@@ -14,9 +14,15 @@ function StripeNavbar () {
         openModal(page, {center, bottom})
     }
 
+    function mouseLeaveHandler (e) {
+        if(!e.target.classList.contains('p13-link-btn')) {
+            closeModal()
+        }
+    }
+
     return(
         <>
-            <nav className='p13-nav'>
+            <nav className='p13-nav' onMouseOver={mouseLeaveHandler}>
                 <div className='p13-nav-center'>
                     <div className='p13-nav-header'>
                         <img src='/images/logo.svg' alt='logo' className='p13-nav-logo'/>
