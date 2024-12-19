@@ -1,6 +1,7 @@
 import './StripeNavbar.css'
 import {useStripeAppContext} from "../../pages/13-stripe/context";
 import {FaBars} from "react-icons/fa";
+import stripeSubLinks from "../../pages/13-stripe/StripeData";
 
 function StripeNavbar () {
     const {openSidebar, openModal, closeModal} = useStripeAppContext()
@@ -24,21 +25,17 @@ function StripeNavbar () {
                         </button>
                     </div>
                     <ul className='p13-nav-links'>
-                        <li>
-                            <button className='p13-link-btn' onMouseOver={openModalHandler}>
-                                products
-                            </button>
-                        </li>
-                        <li>
-                            <button className='p13-link-btn' onMouseOver={openModalHandler}>
-                                developers
-                            </button>
-                        </li>
-                        <li>
-                            <button className='p13-link-btn' onMouseOver={openModalHandler}>
-                                company
-                            </button>
-                        </li>
+                        {
+                            stripeSubLinks.map(link => {
+                                return (
+                                    <li>
+                                        <button className='p13-link-btn' onMouseOver={openModalHandler}>
+                                            {link.page}
+                                        </button>
+                                    </li>
+                                )
+                            })
+                        }
                     </ul>
                     <button className='p13-btn p13-signin-btn'>Sign in</button>
                 </div>
