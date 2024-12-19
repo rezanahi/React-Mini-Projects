@@ -3,7 +3,7 @@ import StripeNavbar from "../../components/StripeNavbar/StripeNavbar";
 import StripeSubmenu from "../../components/StripeSubmenu/StripeSubmenu";
 import StripeHero from "../../components/StripeHero/StripeHero";
 import StripeSidebar from "../../components/StripeSidebar/StripeSidebar";
-import {StripeAppContext} from "../13-stripe/context";
+import {StripeAppContext} from "./context";
 import {useState} from "react";
 
 
