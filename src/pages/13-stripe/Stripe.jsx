@@ -8,8 +8,9 @@ import {useState} from "react";
 
 
 function Stripe () {
-    const [isSidebarOpen, setIsSidebarOpen] = useState(true);
-    const [isModalOpen, setIsModalOpen] = useState(true);
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [location, setLocation] = useState({})
 
     function openSidebar () {
         setIsSidebarOpen(true);
@@ -19,8 +20,10 @@ function Stripe () {
         setIsSidebarOpen(false)
     }
 
-    function openModal () {
+    function openModal (page, coordinates) {
         setIsModalOpen(true)
+        setLocation(coordinates)
+
     }
 
     function closeModal () {
@@ -30,7 +33,7 @@ function Stripe () {
     return(
         <>
             <StripeAppContext.Provider
-                value={{isSidebarOpen, isModalOpen, openModal, closeModal, openSidebar, closeSidebar}}>
+                value={{isSidebarOpen, isModalOpen, location, openModal, closeModal, openSidebar, closeSidebar}}>
                 <StripeNavbar></StripeNavbar>
                 <StripeSidebar></StripeSidebar>
                 <StripeHero></StripeHero>

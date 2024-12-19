@@ -5,6 +5,14 @@ import {FaBars} from "react-icons/fa";
 function StripeNavbar () {
     const {openSidebar, openModal, closeModal} = useStripeAppContext()
 
+    function openModalHandler (e) {
+        const page = e.target.textContent
+        const temp = e.target.getBoundingClientRect()
+        const center = (temp.left + temp.right) / 2
+        const bottom = temp.bottom - 3
+        openModal(page, {center, bottom})
+    }
+
     return(
         <>
             <nav className='p13-nav'>
@@ -17,17 +25,17 @@ function StripeNavbar () {
                     </div>
                     <ul className='p13-nav-links'>
                         <li>
-                            <button className='p13-link-btn'>
+                            <button className='p13-link-btn' onMouseOver={openModalHandler}>
                                 products
                             </button>
                         </li>
                         <li>
-                            <button className='p13-link-btn'>
+                            <button className='p13-link-btn' onMouseOver={openModalHandler}>
                                 developers
                             </button>
                         </li>
                         <li>
-                            <button className='p13-link-btn'>
+                            <button className='p13-link-btn' onMouseOver={openModalHandler}>
                                 company
                             </button>
                         </li>
