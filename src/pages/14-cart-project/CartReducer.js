@@ -15,7 +15,14 @@ function CartReducer (cart, action) {
                 }
             })
 
-
+        case 'DecreaseOneItem' :
+            return cart.map(cartItem => {
+                if(cartItem.id === action.id) {
+                    return {...cartItem, amount: cartItem.amount - 1}
+                } else {
+                    return cartItem
+                }
+            }).filter(cartItem => cartItem.amount > 0)
 
         default :
             return cart
