@@ -89,9 +89,10 @@
     }
     .p11-social-icons {
         display: flex;
+        gap: 1rem;
+    ;
     }
     .p11-social-icons a {
-        margin: 0 0.5rem;
         color: var(--clr-primary-5);
         transition: var(--transition);
     }

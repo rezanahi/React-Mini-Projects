@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa'
-export const links = [
+export const navBarLinks = [
     {
         id: 1,
         url: '/',
@@ -27,7 +27,7 @@ export const links = [
         text: 'profile',
     },
 ]
-export const social = [
+export const navBarSocial = [
     {
         id: 1,
         url: 'https://www.twitter.com',
