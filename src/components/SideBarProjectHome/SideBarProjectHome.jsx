@@ -1,4 +1,5 @@
 import './SideBarProjectHome.css'
+import {FaBars} from "react-icons/fa";
 
 
 function SideBarProjectHome() {
@@ -6,7 +7,14 @@ function SideBarProjectHome() {
 
     return(
         <>
-            SideBar Project component
+            <main className='p12-main'>
+                <button className='p12-sidebar-toggle'>
+                    <FaBars></FaBars>
+                </button>
+                <button className='p12-btn'>
+                    show Modal
+                </button>
+            </main>
         </>
     )
 }

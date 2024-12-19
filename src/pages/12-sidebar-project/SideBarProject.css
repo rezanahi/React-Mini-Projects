@@ -25,7 +25,7 @@ Home
 }
 .p12-sidebar-toggle {
     position: fixed;
-    top: 2rem;
+    top: 4rem;
     left: 3rem;
     font-size: 2rem;
     background: transparent;
@@ -169,6 +169,7 @@ Sidebar
 .p12-social-icons {
     justify-self: center;
     display: flex;
+    gap: 1rem;
     padding-bottom: 2rem;
 }
 .p12-social-icons a {
