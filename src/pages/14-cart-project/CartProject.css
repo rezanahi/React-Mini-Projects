@@ -127,8 +127,8 @@ Cart Item
     margin: 1.5rem 0;
 }
 .p14-cart-item img {
-    width: 5rem;
-    height: 5rem;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 .p14-cart-item h4 {
