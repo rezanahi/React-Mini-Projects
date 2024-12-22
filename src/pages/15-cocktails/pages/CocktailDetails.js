@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useCallback, useEffect} from 'react'
 import {useState} from "react";
 import CocktailLoading from '../../../components/CocktailLoading/CocktailLoading'
 import { useParams, Link } from 'react-router-dom'
@@ -9,7 +9,7 @@ const CocktailDetails = () => {
     const [loading, setLoading] = useState(true)
     const [cocktail, setCocktail] = useState(null)
 
-    async function getCocktail () {
+    const getCocktail = useCallback(async function getCocktail () {
         try {
             const response = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`)
             const data = await response.json()
@@ -42,12 +42,12 @@ const CocktailDetails = () => {
             setLoading(false)
         }
         setLoading(false)
-    }
+    }, [id])
 
     useEffect(() => {
         setLoading(true)
         getCocktail()
-    }, [id]);
+    }, [id, getCocktail]);
 
     if(loading) {
         return <CocktailLoading></CocktailLoading>
