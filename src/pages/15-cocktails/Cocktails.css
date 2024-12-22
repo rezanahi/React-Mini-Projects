@@ -307,6 +307,9 @@ Cocktail
 .p15-loader:after {
     left: 1.5em;
 }
+.p15-main{
+    display: block;
+}
 @-webkit-keyframes load1 {
     0%,
     80%,

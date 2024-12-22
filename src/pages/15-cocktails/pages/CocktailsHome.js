@@ -1,12 +1,16 @@
 import React from 'react'
-// import CocktailList from '../components/CocktailList'
-// import SearchForm from '../components/SearchForm'
+import CocktailList from "../../../components/CocktailList/CocktailList";
+import CocktailSearchForm from "../../../components/CocktailSearchForm/CocktailSearchForm";
+
 
 const CocktailsHome = () => {
     return (
-        <div>
-            <h2>Cocktails home page</h2>
-        </div>
+        <>
+            <main className='p15-main'>
+                <CocktailSearchForm></CocktailSearchForm>
+                <CocktailList></CocktailList>
+            </main>
+        </>
     )
 }
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 const CocktailLoading = () => {
     return (
-        <div className="loader">
+        <div className="p15-loader">
         </div>
     )
 }
