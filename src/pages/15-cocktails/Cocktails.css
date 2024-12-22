@@ -168,7 +168,8 @@ Cocktail
     box-shadow: var(--darkShadow);
 }
 .p15-cocktail img {
-    height: 20rem;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     border-top-left-radius: var(--mainBorderRadius);
     border-top-right-radius: var(--mainBorderRadius);
