@@ -20,6 +20,10 @@ import SideBarProject from "./pages/12-sidebar-project/SideBarProject";
 import Stripe from "./pages/13-stripe/Stripe";
 import CartProject from "./pages/14-cart-project/CartProject";
 import Cocktails from "./pages/15-cocktails/Cocktails";
+import CocktailsHome from "./pages/15-cocktails/pages/CocktailsHome";
+import CocktailsAbout from "./pages/15-cocktails/pages/CocktailsAbout";
+import CocktailDetails from "./pages/15-cocktails/pages/CocktailDetails";
+import CocktailsError from "./pages/15-cocktails/pages/CocktailsError";
 
 function App() {
   return (
@@ -41,7 +45,12 @@ function App() {
             <Route path="/12-sidebar" element={<SideBarProject />} />
             <Route path="/13-stripe" element={<Stripe />} />
             <Route path="/14-cart" element={<CartProject />} />
-            <Route path="/15-cocktails" element={<Cocktails />} />
+            <Route path="/15-cocktails" element={<Cocktails />} >
+                <Route path="" element={<CocktailsHome />} />
+                <Route path="about" element={<CocktailsAbout />} />
+                <Route path="cocktail/:id" element={<CocktailDetails />} />
+                <Route path="*" element={<CocktailsError />} />
+            </Route>
         </Routes>
     </BrowserRouter>
   );
