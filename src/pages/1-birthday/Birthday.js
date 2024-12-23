@@ -11,11 +11,18 @@ function Birthday () {
 
     return(
         <>
-            <main>
-                <section className='container'>
-                    <h3>{data.length} birthdays today</h3>
+            <main
+                className='min-w-full min-h-screen flex items-center justify-center bg-pink-600'>
+                <section
+                    className='w-90-screen my-20 max-w-96 bg-amber-100 py-8 px-8 rounded shadow-xl'>
+                    <h3
+                        className='mb-9'>
+                        {data.length} birthdays today
+                    </h3>
                     <List data={data}></List>
-                    <button onClick={() => {setData([])}}>
+                    <button
+                        className='text-amber-100 block w-full border-transparent bg-pink-400 mt-8 mx-auto uppercase text-lg py-2 rounded cursor-pointer hover:bg-pink-600 transition'
+                        onClick={() => {setData([])}}>
                         Clear All
                     </button>
                 </section>
