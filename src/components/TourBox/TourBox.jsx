@@ -9,14 +9,14 @@ function TourBox ({data, removeTourHandler, refreshHandler}) {
     return(
         <>
             <section>
-                <div className='p2-title'>
+                <div className='mb-16 text-center'>
                     <h2>
                         {data.length ? 'our Tours' : 'no tours left'}
                     </h2>
                     {data.length ?
-                        <div className='p2-underline'></div>
+                        <div className='w-24 h-1 mx-auto bg-emerald-500'></div>
                         :
-                        <button className='btn' onClick={refreshHandler}>refresh</button>
+                        <button className='block bg-emerald-500 py-1 px-2 rounded capitalize text-amber-100 mt-9 mx-auto cursor-pointer text-lg' onClick={refreshHandler}>refresh</button>
                     }
                 </div>
                 <div>

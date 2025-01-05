@@ -6,7 +6,7 @@ function Loading () {
 
     return(
         <>
-            <div className='p2-loading'>
+            <div className='text-center'>
                 <h1>loading...</h1>
             </div>
         </>

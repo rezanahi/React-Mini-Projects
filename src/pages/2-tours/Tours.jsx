@@ -28,11 +28,11 @@ function Tours () {
     return(
         <>
             {loading ?
-                <main className='p2-main'>
+                <main>
                     <Loading></Loading>
                 </main>
                 :
-                <main className='p2-main'>
+                <main className='w-96 mx-auto my-24'>
                     <TourBox
                         refreshHandler={refreshHandler}
                         removeTourHandler={removeTourHandler}
