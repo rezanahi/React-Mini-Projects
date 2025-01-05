@@ -10,11 +10,11 @@ function Reviews () {
 
     return(
         <>
-            <main className='p3-main'>
-                <section className='p3-container'>
-                    <div className='p3-title'>
+            <main className='min-h-screen grid place-items-center'>
+                <section className='w-screen max-w-[450px] my-20'>
+                    <div className='mb-16 text-center'>
                         <h2>Our Reviews</h2>
-                        <div className='p3-underline'></div>
+                        <div className='w-20 h-1 bg-emerald-500 mx-auto'></div>
                     </div>
                     <Review></Review>
                 </section>
