@@ -3,6 +3,11 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      colors: {
+        gold: {
+          500: '#c59d5f'
+        }
+      },
       width: {
         '90-screen': '90vw',
       },

@@ -25,10 +25,10 @@ function FoodMenu() {
     return(
         <>
                 <main className='bg-amber-100'>
-                    <section className='p5-menu p5-section'>
-                        <div className='p5-title'>
+                    <section className='py-20 w-[90vw] mx-auto max-w-[1170px]'>
+                        <div className='mb-8 text-center'>
                             <h2>Our Menu</h2>
-                            <div className='p5-underline'></div>
+                            <div className='w-20 h-1 bg-gold-500 mx-auto'></div>
                         </div>
                         <FoodMenuCategories categories={categories} filterItems={filterItems}></FoodMenuCategories>
                         <FoodMenuList menu={menu}></FoodMenuList>
