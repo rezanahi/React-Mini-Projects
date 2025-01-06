@@ -10,14 +10,14 @@ function Question ({title, info}) {
 
     return(
         <>
-            <article className='p4-question'>
-                <header>
-                    <h4>{title}</h4>
-                    <button className='p4-btn' onClick={() => {setShowInfo(si => !si)}}>
-                        {showInfo ? <AiOutlineMinus></AiOutlineMinus> : <AiOutlinePlus></AiOutlinePlus>}
+            <article className='py-4 px-6 border border-solid border-gray-300 mb-4 rounded shadow-md'>
+                <header className='flex justify-between items-center'>
+                    <h4 className='leading-6'>{title}</h4>
+                    <button className='group/button bg-white hover:bg-pink-500 border-pink-500 border w-8 aspect-square flex justify-center items-center rounded-full cursor-pointer ml-4 transition duration-500' onClick={() => {setShowInfo(si => !si)}}>
+                        {showInfo ? <AiOutlineMinus className='group-hover/button:fill-white transition fill-pink-700 duration-500'></AiOutlineMinus> : <AiOutlinePlus className='group-hover/button:fill-white transition fill-pink-700 duration-500'></AiOutlinePlus>}
                     </button>
                 </header>
-                {showInfo && <p>{info}</p>}
+                {showInfo && <p className='text-gray-600 mt-2'>{info}</p>}
             </article>
         </>
     )
