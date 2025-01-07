@@ -13,6 +13,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         '2-auto-fr': 'auto 1fr',
+        '2-200px-fr': '200px 1fr',
       }
     },
   },
