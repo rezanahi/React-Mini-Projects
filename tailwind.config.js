@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      translate: {
+        '1/1' : '100%'
+      },
       colors: {
         gold: {
           500: '#c59d5f'
