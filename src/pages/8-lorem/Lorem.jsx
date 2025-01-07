@@ -17,16 +17,16 @@ function Lorem () {
 
     return(
         <>
-            <section className='p8-section-center'>
+            <section className='w-[90vw] mx-auto max-w-[40rem] text-center mt-20'>
                 <h3>Tired of boring lorem ipsum?</h3>
-                <form className='p8-lorem-form' onSubmit={handleSubmit}>
-                    <label className='p8-label' htmlFor='amount'>
+                <form className='capitalize mt-8 mb-16 flex justify-center items-center' onSubmit={handleSubmit}>
+                    <label className='text-xl' htmlFor='amount'>
                         paragraphs:
                     </label>
-                    <input className='p8-input' type='number' min={0} name='amount' id='amount' value={count} onChange={handleCount}/>
-                    <button type='submit' className='p8-btn'>Generate</button>
+                    <input className='py-1 px-2 w-16 rounded border-none mx-2 text-xl' type='number' min={0} max={9} name='amount' id='amount' value={count} onChange={handleCount}/>
+                    <button type='submit' className='uppercase bg-emerald-500 hover:bg-emerald-300 text-emerald-950 py-1 px-3 inline-block transition text-sm border-2 border-solid border-emerald-500 hover:border-emerald-300 cursor-pointer shadow rounded'>Generate</button>
                 </form>
-                <article className='p8-lorem-text'>
+                <article className='last:mb-16'>
                     {text.map(p => {
                         return (
                             <p>
