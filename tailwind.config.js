@@ -25,7 +25,7 @@ module.exports = {
         'auto-fit-cols': 'repeat(auto-fit, minmax(223.33px, 1fr))',
       },
       gridTemplateRows: {
-        'auto-fit-rows': 'repeat(auto-fit, minmax(96px, 1fr))',
+        'auto-fit-rows': 'repeat(auto-fit, minmax(128px, 1fr))',
       },
       gridAutoColumns: {
         'auto-fit-cols': 'minmax(223.33px, 1fr)',
