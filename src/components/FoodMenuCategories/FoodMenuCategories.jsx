@@ -8,7 +8,7 @@ function FoodMenuCategories ({filterItems, categories}) {
 
     return(
         <>
-            <div className='mb-16 flex justify-center'>
+            <div className='mb-16 flex-row-reverse flex justify-center'>
                 {
                     categories.map((category, index) => {
                         return (

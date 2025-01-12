@@ -11,7 +11,7 @@ function FoodMenuList({menu}) {
                     menu.map((menuItem) => {
                         const {id, title, img, desc, price} = menuItem
                         return(
-                            <article key={id} className='grid max-w-96 gap-y-4 gap-x-8'>
+                            <article dir='ltr' key={id} className='grid max-w-96 gap-y-4 gap-x-8'>
                                 <img src={img} alt={title} className='object-cover w-full h-[200px] border-4 border-gold-500 rounded-md block' />
                                 <div>
                                     <header className='flex justify-between border-b border-dotted border-gray-700'>
