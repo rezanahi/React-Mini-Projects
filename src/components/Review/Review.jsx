@@ -69,10 +69,10 @@ function Review () {
                 <p className='mb-6'>{reviewData.text}</p>
                 <div className='mt-auto'>
                     <button className='group/btn text-xl bg-transparent border-transparent mx-2 cursor-pointer hover:fill-emerald-700' onClick={previousReviewHandler}>
-                        <FaChevronLeft className='fill-emerald-500 group-hover/btn:fill-emerald-700 transition duration-500'></FaChevronLeft>
+                        <FaChevronRight className='fill-emerald-500 group-hover/btn:fill-emerald-700 transition duration-500'></FaChevronRight>
                     </button>
                     <button className='group/btn text-xl bg-transparent border-transparent mx-2 cursor-pointer hover:fill-emerald-700' onClick={nextReviewHandler}>
-                        <FaChevronRight className='fill-emerald-500 group-hover/btn:fill-emerald-700 transition duration-500'></FaChevronRight>
+                        <FaChevronLeft className='fill-emerald-500 group-hover/btn:fill-emerald-700 transition duration-500'></FaChevronLeft>
                     </button>
                 </div>
                 <button className='mt-2 w-36 bg-white text-emerald-500 py-1 px-2 capitalize rounded transition border-transparent cursor-pointer hover:bg-emerald-500 hover:text-white duration-500' onClick={randomReviewHandler}>
