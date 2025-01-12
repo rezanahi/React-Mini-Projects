@@ -16,10 +16,10 @@ function SingleColor({rgb, weight, index}) {
 
     return(
         <>
-            <article onClick={onClickHandler} className={`p9-color ${index > 10 && 'p9-color-light'}`} style={{backgroundColor: `rgb(${rgb.join(',')})`}}>
-                <p className='p9-percent-value'>{weight}%</p>
-                <p className='p9-color-value'>{rgbToHex(...rgb)}</p>
-                {alert && <p className='p9-alert'>Copied to clipboard</p>}
+            <article onClick={onClickHandler} className={`py-4 px-8 cursor-pointer text-sm text-black`} style={{backgroundColor: `rgb(${rgb.join(',')})`}}>
+                <p className={`mb-0 ${index > 10 ? 'text-white' : 'text-black'}`}>{weight}%</p>
+                <p className={`mb-0 ${index > 10 ? 'text-white' : 'text-black'}`}>{rgbToHex(...rgb)}</p>
+                {alert && <p className='uppercase text-sm mt-2 '>Copied to clipboard</p>}
             </article>
         </>
     )
