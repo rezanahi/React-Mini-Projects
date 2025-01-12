@@ -26,14 +26,14 @@ function Color () {
     return(
         <>
             <main  dir='ltr' className='w-full pb-20 bg-fuchsia-300'>
-                <section className='text-center flex items-center h-28 pl-8'>
-                    <h3 className='mb-0 mr-8'>Color Generator</h3>
+                <section className='text-center flex flex-col md:flex-row items-center h-36 justify-center gap-4 md:h-28 md:pl-8'>
+                    <h3 className='mb-0 md:mr-8'>Color Generator</h3>
                     <form onSubmit={handleSubmit}>
                         <input
-                            className={`py-2 px-4 text-lg rounded-tl rounded-bl ${error && 'border-2 border-solid border-red-700'}`}
+                            className={`py-2 px-4 text-sm md:text-lg rounded-tl rounded-bl ${error && 'border-2 border-solid border-red-700'}`}
                             type='text' value={color} onChange={colorHandler} placeholder='#f15025'/>
                         <button
-                            className='bg-emerald-500 py-2 px-4 border-transparent rounded-tr rounded-br capitalize text-[1.2rem] text-white cursor-pointer'
+                            className='bg-emerald-500 py-2 px-4 border-transparent rounded-tr rounded-br capitalize text-sm md:text-lg text-white cursor-pointer'
                             type='submit'>Submit
                         </button>
                     </form>
