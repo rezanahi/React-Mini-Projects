@@ -25,14 +25,14 @@ function Color () {
 
     return(
         <>
-            <section className='p9-container'>
-                <h3>Color Generator</h3>
+            <section className='text-center flex items-center h-28 pl-8'>
+                <h3 className='mb-0 mr-8'>Color Generator</h3>
                 <form onSubmit={handleSubmit}>
-                    <input className={`p9-input ${error && 'p9-error'}`} type='text' value={color} onChange={colorHandler} placeholder='#f15025'/>
-                    <button className='p9-btn' type='submit'>Submit</button>
+                    <input className={`py-2 px-4 text-lg rounded-tl rounded-bl ${error && 'border-2 border-solid border-red-700'}`} type='text' value={color} onChange={colorHandler} placeholder='#f15025'/>
+                    <button className='bg-emerald-500 py-2 px-4 border-transparent rounded-tr rounded-br capitalize text-[1.2rem] text-white cursor-pointer' type='submit'>Submit</button>
                 </form>
             </section>
-            <section className='p9-colors'>
+            <section className='grid grid-cols-auto-fit-cols auto-cols-auto-fit-cols grid-rows-auto-fit-rows auto-rows-auto-fit-rows min-h-[calc(100vh-100px)]'>
                 {list.map((color, index) => {
                     return <SingleColor key={index} {...color} index={index}></SingleColor>
                 })}
