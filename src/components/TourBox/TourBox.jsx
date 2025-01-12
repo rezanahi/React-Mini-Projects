@@ -8,7 +8,7 @@ function TourBox ({data, removeTourHandler, refreshHandler}) {
 
     return(
         <>
-            <section>
+            <section className='w-full max-w-96 md:w-96 mx-auto py-24 px-2 md:px-0'>
                 <div className='mb-16 text-center'>
                     <h2>
                         {data.length ? 'our Tours' : 'no tours left'}

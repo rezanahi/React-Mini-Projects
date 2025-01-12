@@ -32,7 +32,7 @@ function Tours () {
                     <Loading></Loading>
                 </main>
                 :
-                <main className='w-96 mx-auto my-24'>
+                <main className='w-full bg-emerald-100'>
                     <TourBox
                         refreshHandler={refreshHandler}
                         removeTourHandler={removeTourHandler}
