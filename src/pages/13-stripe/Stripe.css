@@ -186,7 +186,7 @@ Stripe Styles
 }
 
 /* sidebar */
-.p13-sidebar-wrapper {
+/* .p13-sidebar-wrapper {
     position: fixed;
     top: 0;
     left: 0;
@@ -199,13 +199,13 @@ Stripe Styles
     transition: var(--transition);
     transform: scale(0);
     background: rgba(0, 0, 0, 0.5);
-}
-.p13-sidebar-show {
+} */
+/* .p13-sidebar-show {
     visibility: visible;
     z-index: 2;
     transform: scale(1);
-}
-.p13-sidebar {
+} */
+/* .p13-sidebar {
     width: 90vw;
     height: 95vh;
     max-width: var(--fixed-width);
@@ -214,8 +214,8 @@ Stripe Styles
     box-shadow: var(--dark-shadow);
     position: relative;
     padding: 4rem 2rem;
-}
-.p13-close-btn {
+} */
+/* .p13-close-btn {
     font-size: 2rem;
     background: transparent;
     border-color: transparent;
@@ -224,26 +224,26 @@ Stripe Styles
     top: 1rem;
     right: 1rem;
     cursor: pointer;
-}
-.p13-sidebar article {
+} */
+/* .p13-sidebar article {
     margin-bottom: 2rem;
-}
-.p13-sidebar-sublinks {
+} */
+/* .p13-sidebar-sublinks {
     display: grid;
     grid-template-rows: repeat(3, auto);
     row-gap: 0.25rem;
-}
-.p13-sidebar-sublinks a {
+} */
+/* .p13-sidebar-sublinks a {
     display: block;
     color: var(--clr-grey-1);
     text-transform: capitalize;
     display: flex;
     align-items: center;
-}
-.p13-sidebar-sublinks svg {
+} */
+/* .p13-sidebar-sublinks svg {
     color: var(--clr-grey-5);
     margin-right: 1rem;
-}
+} */
 
 @media screen and (min-width: 800px) {
     .p13-sidebar-wrapper {
