@@ -13,7 +13,7 @@ function FoodMenuList({menu}) {
                         return(
                             <article dir='ltr' key={id} className='grid max-w-96 gap-y-4 gap-x-8'>
                                 <img src={img} alt={title} className='object-cover w-full h-[200px] border-4 border-gold-500 rounded-md block' />
-                                <div>
+                                <div className='h-32'>
                                     <header className='flex justify-between border-b border-dotted border-gray-700'>
                                         <h4 className='mb-2'>{title}</h4>
                                         <h4 className='text-gold-500'>{price}</h4>
