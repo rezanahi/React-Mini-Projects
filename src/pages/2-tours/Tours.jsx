@@ -28,7 +28,7 @@ function Tours () {
     return(
         <>
             {loading ?
-                <main>
+                <main className='w-full bg-emerald-100 min-h-screen'>
                     <Loading></Loading>
                 </main>
                 :
