@@ -16,7 +16,7 @@
 Stripe Styles
 ===============
 */
-.p13-nav {
+/* .p13-nav {
     height: 5rem;
     display: flex;
     align-items: center;
@@ -24,17 +24,17 @@ Stripe Styles
     background: transparent;
     position: relative;
     z-index: 1;
-}
-.p13-nav-center {
+} */
+/* .p13-nav-center {
     width: 90vw;
     max-width: var(--max-width);
-}
-.p13-nav-header {
+} */
+/* .p13-nav-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.p13-btn {
+} */
+/* .p13-btn {
     font-size: 1rem;
     padding: 0.25rem 0.75rem;
     border-radius: var(--radius);
@@ -46,13 +46,13 @@ Stripe Styles
 }
 .p13-btn:hover {
     background: var(--clr-grey-5);
-}
-.p13-nav-links {
+} */
+/* .p13-nav-links {
     display: none;
-}
-.p13-signin-btn {
+} */
+/* .p13-signin-btn {
     display: none;
-}
+} */
 .p13-hero-center{
     z-index: 1;
 }
@@ -98,18 +98,18 @@ Stripe Styles
 
 /* nav media query */
 @media screen and (min-width: 800px) {
-    .p13-nav-center {
+    /* .p13-nav-center {
         display: grid;
         grid-template-columns: auto 1fr auto;
         align-items: center;
-    }
-    .p13-toggle-btn {
+    } */
+    /* .p13-toggle-btn {
         display: none;
-    }
-    .p13-signin-btn {
+    } */
+    /* .p13-signin-btn {
         display: inline-block;
-    }
-    .p13-nav-links {
+    } */
+    /* .p13-nav-links {
         display: block;
         justify-self: center;
         display: grid;
@@ -118,11 +118,11 @@ Stripe Styles
         height: 100%;
         display: grid;
         align-items: center;
-    }
-    .p13-nav-links li {
+    } */
+    /* .p13-nav-links li {
         height: 100%;
-    }
-    .p13-link-btn {
+    } */
+    /* .p13-link-btn {
         height: 100%;
         background: transparent;
         border-color: transparent;
@@ -131,7 +131,7 @@ Stripe Styles
         text-transform: capitalize;
         letter-spacing: 1px;
         width: 10rem;
-    }
+    } */
 }
 
 /* hero media query */

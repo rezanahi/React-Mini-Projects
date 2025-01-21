@@ -22,20 +22,20 @@ function StripeNavbar () {
 
     return(
         <>
-            <nav className='p13-nav' onMouseOver={mouseLeaveHandler}>
-                <div className='p13-nav-center'>
-                    <div className='p13-nav-header'>
-                        <img src='/images/logo.svg' alt='logo' className='p13-nav-logo'/>
-                        <button className='p13-btn p13-toggle-btn' onClick={openSidebar}>
+            <nav className='h-20 flex items-center justify-center bg-transparent relative z-[1]' onMouseOver={mouseLeaveHandler}>
+                <div className='w-[90vw] max-w-[1170px] md:grid md:grid-cols-[auto_1fr_auto] md:items-center'>
+                    <div className='flex justify-between items-center'>
+                        <img src='/images/logo.svg' alt='logo' className=''/>
+                        <button className='text-lg py-1 px-3 rounded-md border-transparent text-white bg-stone-900 cursor-pointer transition hover:bg-stone-800 md:hidden' onClick={openSidebar}>
                             <FaBars></FaBars>
                         </button>
                     </div>
-                    <ul className='p13-nav-links'>
+                    <ul className='hidden md:grid md:justify-center md:grid-cols-3 md:text-center md:h-full md:items-center'>
                         {
                             stripeSubLinks.map(link => {
                                 return (
-                                    <li>
-                                        <button className='p13-link-btn' onMouseOver={openModalHandler}>
+                                    <li className='md:h-full'>
+                                        <button className='md:h-full md:bg-transparent md:border-transparent md:text-lg md:text-white md:w-40' onMouseOver={openModalHandler}>
                                             {link.page}
                                         </button>
                                     </li>
@@ -43,7 +43,7 @@ function StripeNavbar () {
                             })
                         }
                     </ul>
-                    <button className='p13-btn p13-signin-btn'>Sign in</button>
+                    <button className='text-lg py-1 px-3 rounded-md border-transparent text-white bg-stone-900 cursor-pointer transition hover:bg-stone-800 hidden md:inline-block'>Sign in</button>
                 </div>
             </nav>
         </>
