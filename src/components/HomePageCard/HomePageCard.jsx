@@ -4,7 +4,7 @@ import { BsArrowUpLeftSquareFill } from "react-icons/bs";
 
 function HomePageCard({ level, name, image, url, github, discription}) {
   return (
-    <div className="overflow-hidden w-full h-auto flex flex-col gap-4 border border-1 border-stone-500 rounded-md p-2 shadow-md bg-sto">
+    <div className="overflow-hidden bg-[#dcc49f] w-full max-w-[404px] mx-auto h-auto flex flex-col gap-4 border border-1 border-stone-500 rounded-md p-2 shadow-md bg-sto">
       <div className="w-full aspect-video bg-black overflow-hidden shrink-0 rounded border border-1 border-stone-500">
         <img
           src={image}
@@ -14,7 +14,7 @@ function HomePageCard({ level, name, image, url, github, discription}) {
       </div>
       <div className="flex flex-col w-full justify-between items-start">
         <Link to={url} className="w-full-64px block">
-          <h1 className="text-stone-800 hover:text-stone-700 transition font-vazir font-bold text-2xl mb-4 truncate">
+          <h1 className="text-stone-800 hover:text-stone-700 transition font-vazir font-bold text-xl sm:text-2xl mb-4 truncate">
             {name}
           </h1>
         </Link>
