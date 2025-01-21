@@ -79,27 +79,27 @@ function ToDoList () {
 
     return(
         <>
-            <section className='p10-section-center'>
-                <form className='p10-grocery-form' onSubmit={submitHandler}>
+            <section className='font-vazir w-[90vw] mx-auto max-w-[35rem] mt-32 p-8 bg-white rounded transition shadow hover:shadow-md lg:w-[95vw]'>
+                <form onSubmit={submitHandler}>
                     {alert.show && <ToDoAlert {...alert}></ToDoAlert>}
-                    <h3>To Do List</h3>
-                    <div className='p10-form-control'>
+                    <h3 className='text-stone-900 mb-6 text-center'>To Do List</h3>
+                    <div className='flex justify-center'>
                         <input
                             type='text'
-                            className='p10-grocery'
-                            placeholder={'ex. my todo'}
+                            className='p-1 pr-4 bg-gray-200 rounded-tr rounded-br text-lg text-gray-800 grow'
+                            placeholder={'مثال : تسک شماره یک'}
                             value={name} onChange={(e) => setName(e.target.value)}/>
-                        <button type='submit' className='p10-submit-btn'>
-                            {isEditing ? 'edit' : 'submit'}
+                        <button type='submit' className='bg-blue-400 border-transparent basis-20 grid items-center p-1 capitalize rounded-tl rounded-bl cursor-pointer transition text-sm hover:bg-emerald-700 hover:text-white'>
+                            {isEditing ? 'ویرایش' : 'ثبت'}
                         </button>
                     </div>
                 </form>
                 {list.length > 0 &&
-                    <div className='p10-grocery-container'>
+                    <div className='mt-8'>
                         <ToDos list={list}
                                deleteToDoHandler={deleteToDoHandler}
                                editToDoHandler={editToDoHandler}></ToDos>
-                        <button className='p10-clear-btn' onClick={clearListHandler}>Clear Items</button>
+                        <button className='w-full py-1 rounded capitalize grid items-center border-transparent hover:bg-red-200 text-red-600 mx-auto text-sm cursor-pointer transition mt-5' onClick={clearListHandler}>حذف آیتم ها</button>
                     </div>
                 }
             </section>
