@@ -55,12 +55,9 @@ Navbar
 ======
 */
 .p15-navbar {
-    background: var(--mainWhite);
     height: 5rem;
     display: flex;
     align-items: center;
-    border-bottom: 2px solid var(--primaryColor);
-    box-shadow: var(--lightShadow);
 }
 .p15-nav-center {
     display: flex;

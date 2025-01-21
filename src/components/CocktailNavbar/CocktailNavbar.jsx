@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const CocktailNavbar = () => {
     return (
-        <nav className='p15-navbar'>
+        <nav className='p15-navbar bg-lime-200'>
             <div className='p15-nav-center'>
                 <Link to='/15-cocktails'>
                     <img src='/CocktailLogo.svg' alt='cocktail db logo' className='p15-logo'/>
