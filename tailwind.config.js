@@ -35,7 +35,10 @@ module.exports = {
       },
       fontFamily: {
         'vazir': ['Vazirmatn']
-      }
+      },
+      backgroundImage: {
+        hero: "url('../public/images/hero.svg')", // مسیر تصویر
+      },
     },
   },
   plugins: [],

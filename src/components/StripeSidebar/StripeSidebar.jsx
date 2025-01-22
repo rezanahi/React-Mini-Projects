@@ -10,7 +10,7 @@ function StripeSidebar () {
 
     return(
         <>
-            <aside className={`fixed top-0 left-0 w-full h-full grid place-items-center -z-[1] transition-all scale-0 bg-stone-950/50 ${isSidebarOpen ? 'visible z-[2] scale-100' : 'invisible'} `}>
+            <aside className={`fixed top-0 left-0 w-full h-full grid place-items-center -z-[1] transition-all scale-0 bg-stone-950/50 ${isSidebarOpen ? 'visible z-30 scale-100' : 'invisible'} `}>
                 <div className='w-[90vw] h-[95vh] max-w-[1170px] bg-white rounded shadow relative py-16 px-8'>
                     <button className='text-3xl bg-transparent border-transparent text-gray-700 hover:text-gray-900 transition absolute top-6 right-6 cursor-pointer' onClick={closeSidebar}>
                         <FaTimes></FaTimes>
