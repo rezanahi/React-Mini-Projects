@@ -6,7 +6,7 @@ import CocktailSearchForm from "../../../components/CocktailSearchForm/CocktailS
 const CocktailsHome = () => {
     return (
         <>
-            <main className='p15-main bg-lime-100'>
+            <main className='p15-main bg-lime-100 min-h-screen'>
                 <CocktailSearchForm></CocktailSearchForm>
                 <CocktailList></CocktailList>
             </main>

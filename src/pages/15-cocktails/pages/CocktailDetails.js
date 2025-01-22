@@ -52,38 +52,41 @@ const CocktailDetails = () => {
     if(loading) {
         return <CocktailLoading></CocktailLoading>
     } else if(!cocktail) {
-        return <h2 className='p15-section-title'>no cocktail to display</h2>
+        return <div className='w-full h-screen bg-lime-100 pt-8'>
+            <h2 className='text-2xl capitalize text-center mb-14'>no cocktail to display</h2>
+        </div>
     }
 
     return (
-        <section className='p15-section p15-cocktail-section'>
-            <Link to='/15-cocktails' className='p15-btn p15-btn-primary'>back home</Link>
-            <h2 className='p15-section-title'>{cocktail.name}</h2>
-            <div className='p15-drink'>
-                <img src={cocktail.image} alt={cocktail.name}/>
+        <div className='w-full h-full bg-lime-100'>
+            <section className='py-20 px-0 text-center'>
+            <Link to='/15-cocktails' className='uppercase text-green-800 border-2 border-green-800 inline-flex transition cursor-pointer text-sm bg-transparent rounded py-2 px-4 hover:bg-green-100'>back home</Link>
+            <h2 className='text-2xl capitalize text-center mb-14 mt-4'>{cocktail.name}</h2>
+            <div className='md:grid md:grid-cols-[2fr_3fr] md:gap-12 md:items-center w-[85vw] max-w-[1170px] mx-auto text-left'>
+                <img className='rounded' src={cocktail.image} alt={cocktail.name}/>
                 <div className='p15-drink-info'>
-                    <p>
-                        <span className='p15-drink-data'>name : </span>
+                    <p className='font-medium capitalize'>
+                        <span className='bg-lime-200 rounded py-1 px-2 text-green-900 mr-2'>name : </span>
                         {cocktail.name}
                     </p>
-                    <p>
-                        <span className='p15-drink-data'>category : </span>
+                    <p className='font-medium capitalize'>
+                        <span className='bg-lime-200 rounded py-1 px-2 text-green-900 mr-2'>category : </span>
                         {cocktail.category}
                     </p>
-                    <p>
-                        <span className='p15-drink-data'>info : </span>
+                    <p className='font-medium capitalize'>
+                        <span className='bg-lime-200 rounded py-1 px-2 text-green-900 mr-2'>info : </span>
                         {cocktail.info}
                     </p>
-                    <p>
-                        <span className='p15-drink-data'>glass : </span>
+                    <p className='font-medium capitalize'>
+                        <span className='bg-lime-200 rounded py-1 px-2 text-green-900 mr-2'>glass : </span>
                         {cocktail.glass}
                     </p>
-                    <p>
-                        <span className='p15-drink-data'>instructions : </span>
+                    <p className='font-medium capitalize'>
+                        <span className='bg-lime-200 rounded py-1 px-2 text-green-900 mr-2'>instructions : </span>
                         {cocktail.instructions}
                     </p>
-                    <p>
-                        <span className='p15-drink-data'>ingredients : </span>
+                    <p className='font-medium capitalize'>
+                        <span className='bg-lime-200 rounded py-1 px-2 text-green-900 mr-2'>ingredients : </span>
                         {cocktail.ingredients.map((item, index) => {
                             return item ? <span key={index}>{item}</span> : null
                         })}
@@ -91,6 +94,7 @@ const CocktailDetails = () => {
                 </div>
             </div>
         </section>
+        </div>
     )
 }
 

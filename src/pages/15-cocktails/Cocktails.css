@@ -1,4 +1,4 @@
-.p15-btn,
+/* .p15-btn,
 .p15-btn-white,
 .p15-btn-primary {
     text-transform: uppercase;
@@ -25,8 +25,8 @@
 .p15-btn-white:hover {
     background: var(--mainWhite);
     color: var(--primaryColor);
-}
-.p15-btn-primary {
+} */
+/* .p15-btn-primary {
     background: var(--primaryColor);
     color: var(--mainWhite);
     border-color: transparent;
@@ -34,7 +34,7 @@
 .p15-btn-primary:hover {
     background: var(--primaryLightColor);
     color: var(--primaryColor);
-}
+} */
 .p15-btn-block {
     width: 100%;
     display: block;
@@ -54,20 +54,20 @@
 Navbar
 ======
 */
-.p15-navbar {
+/* .p15-navbar {
     height: 5rem;
     display: flex;
     align-items: center;
-}
-.p15-nav-center {
+} */
+/* .p15-nav-center {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: var(--smallWidth);
     margin: 0 auto;
     max-width: var(--fullWidth);
-}
-.p15-nav-links {
+} */
+/* .p15-nav-links {
     display: flex;
     align-items: center;
 }
@@ -86,13 +86,13 @@ Navbar
 }
 .p15-logo {
     width: 12rem;
-}
+} */
 /*
 ======
 About
 ======
 */
-.p15-about-section {
+/* .p15-about-section {
     width: var(--smallWidth);
     max-width: var(--maxWidth);
     margin: 0 auto;
@@ -101,27 +101,27 @@ About
     line-height: 2rem;
     font-weight: 400;
     letter-spacing: 2px;
-}
+} */
 /*
 ======
 Error
 ======
 */
-.p15-error-page {
+/* .p15-error-page {
     display: flex;
     justify-content: center;
-}
-.p15-error-container {
+} */
+/* .p15-error-container {
     text-align: center;
     text-transform: capitalize;
-}
+} */
 /*
 ======
 Cocktails List
 ======
 */
 
-.p15-section {
+/* .p15-section {
     padding: 5rem 0;
 }
 .p15-section-title {
@@ -131,28 +131,29 @@ Cocktails List
     text-align: center;
     margin-bottom: 3.5rem;
     margin-top: 1rem;
-}
-.p15-cocktails-center {
+} */
+/* .p15-cocktails-center {
     width: var(--smallWidth);
     margin: 0 auto;
     max-width: var(--fullWidth);
     display: grid;
     row-gap: 2rem;
     column-gap: 2rem;
-    /* align-items: start; */
-}
-@media screen and (min-width: 576px) {
+    align-items: start;
+} */
+
+/* @media screen and (min-width: 576px) {
     .p15-cocktails-center {
         grid-template-columns: repeat(auto-fill, minmax(338.8px, 1fr));
     }
-}
+} */
 /*
 ======
 Cocktail
 ======
 */
 
-.p15-cocktail {
+/* .p15-cocktail {
     background: var(--mainWhite);
     margin-bottom: 2rem;
     box-shadow: var(--lightShadow);
@@ -163,15 +164,15 @@ Cocktail
 }
 .p15-cocktail:hover {
     box-shadow: var(--darkShadow);
-}
-.p15-cocktail img {
+} */
+/* .p15-cocktail img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-top-left-radius: var(--mainBorderRadius);
     border-top-right-radius: var(--mainBorderRadius);
-}
-.p15-cocktail-footer {
+} */
+/* .p15-cocktail-footer {
     padding: 1.5rem;
 }
 .p15-cocktail-footer h3,
@@ -185,17 +186,17 @@ Cocktail
 .p15-cocktail-footer p {
     color: var(--darkGrey);
     margin-bottom: 0.5rem;
-}
+} */
 /*
 ======
 Form
 ======
 */
-.p15-search {
+/* .p15-search {
     padding-bottom: 0;
-}
+} */
 
-.p15-search-form {
+/* .p15-search-form {
     width: var(--smallWidth);
     margin: 0 auto;
     max-width: var(--maxWidth);
@@ -204,16 +205,16 @@ Form
     text-transform: capitalize;
     border-radius: var(--mainBorderRadius);
     box-shadow: var(--lightShadow);
-}
+} */
 
-.p15-form-control label {
+/* .p15-form-control label {
     display: block;
     margin-bottom: 1.25rem;
     font-weight: bold;
     letter-spacing: 0.25rem;
     color: var(--primaryColor);
-}
-.p15-form-control input {
+} */
+/* .p15-form-control input {
     width: 100%;
     border: none;
     border-color: transparent;
@@ -221,17 +222,17 @@ Form
     border-radius: var(--mainBorderRadius);
     padding: 0.5rem;
     font-size: 1.2rem;
-}
+} */
 /*
 ======
 Cocktail
 ======
 */
 
-.p15-cocktail-section {
+/* .p15-cocktail-section {
     text-align: center;
-}
-.p15-drink {
+} */
+/* .p15-drink {
     width: var(--smallWidth);
     max-width: var(--fullWidth);
     margin: 0 auto;
@@ -267,8 +268,8 @@ Cocktail
     .p15-drink-info {
         padding-top: 0;
     }
-}
-.p15-loader,
+} */
+/* .p15-loader,
 .p15-loader:before,
 .p15-loader:after {
     background: transparent;
@@ -303,8 +304,8 @@ Cocktail
 }
 .p15-loader:after {
     left: 1.5em;
-}
-.p15-main{
+} */
+/* .p15-main{
     display: block;
 }
 @-webkit-keyframes load1 {
@@ -330,4 +331,4 @@ Cocktail
         box-shadow: 0 -2em;
         height: 5em;
     }
-}
+} */

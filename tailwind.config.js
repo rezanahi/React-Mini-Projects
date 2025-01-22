@@ -39,9 +39,28 @@ module.exports = {
       backgroundImage: {
         hero: "url('../public/images/hero.svg')", // مسیر تصویر
       },
+      keyframes: {
+        load1: {
+          '0%, 80%, 100%': {
+            boxShadow: '0 0',
+            height: '4em',
+          },
+          '40%': {
+            boxShadow: '0 -2em',
+            height: '5em',
+          },
+        },
+      },
+      animation: {
+        load1: 'load1 1.5s 0.5s infinite ease-in-out',
+        load1after: 'load1 1.5s 1s infinite ease-in-out',
+        load1before: 'load1 1.5s infinite ease-in-out',
+      },
     },
   },
   plugins: [],
   darkMode: 'selector',
 }
+
+
 
