@@ -13,7 +13,7 @@ function CartProject () {
     return(
         <>
             <CartContext.Provider value={{cart,}}>
-                <main className='block bg-blue-200'>
+                <main className='block bg-blue-200 min-h-screen'>
                     <CartNavbar></CartNavbar>
                     <CartContainer dispatch={dispatch}></CartContainer>
                 </main>
