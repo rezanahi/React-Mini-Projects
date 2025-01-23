@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.d1e49ce5.css",
-    "main.js": "/static/js/main.ae0f5d9c.js",
-    "static/js/453.4d63635a.chunk.js": "/static/js/453.4d63635a.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "static/media/hero.svg": "/static/media/hero.acf1e00e9c9a661a4b0a.svg",
-    "index.html": "/index.html",
-    "main.d1e49ce5.css.map": "/static/css/main.d1e49ce5.css.map",
-    "main.ae0f5d9c.js.map": "/static/js/main.ae0f5d9c.js.map",
-    "453.4d63635a.chunk.js.map": "/static/js/453.4d63635a.chunk.js.map"
+    "main.css": "/React-Mini-Projects/static/css/main.83258fad.css",
+    "main.js": "/React-Mini-Projects/static/js/main.ceb893e7.js",
+    "static/js/453.4d63635a.chunk.js": "/React-Mini-Projects/static/js/453.4d63635a.chunk.js",
+    "static/media/logo.svg": "/React-Mini-Projects/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/hero.svg": "/React-Mini-Projects/static/media/hero.acf1e00e9c9a661a4b0a.svg",
+    "index.html": "/React-Mini-Projects/index.html",
+    "main.83258fad.css.map": "/React-Mini-Projects/static/css/main.83258fad.css.map",
+    "main.ceb893e7.js.map": "/React-Mini-Projects/static/js/main.ceb893e7.js.map",
+    "453.4d63635a.chunk.js.map": "/React-Mini-Projects/static/js/453.4d63635a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1e49ce5.css",
-    "static/js/main.ae0f5d9c.js"
+    "static/css/main.83258fad.css",
+    "static/js/main.ceb893e7.js"
   ]
 }
