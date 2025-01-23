@@ -27,7 +27,7 @@ import CocktailsError from "./pages/15-cocktails/pages/CocktailsError";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/React-Mini-Projects'>
       <Menu></Menu>
         <Routes>
             <Route path="/" element={<Home />} />

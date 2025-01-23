@@ -3,7 +3,7 @@ import React from 'react'
 const CocktailsAbout = () => {
     return (
         <>
-            <div className='w-full h-full bg-lime-100'>
+            <div className='w-full h-full min-h-screen bg-lime-100'>
             <section className='py-20 px-0 text-end w-[85vw] max-w-[1170px] mx-auto'>
                 <h1 className='p15-section-title'>about us</h1>
                 <p className='font-normal'>

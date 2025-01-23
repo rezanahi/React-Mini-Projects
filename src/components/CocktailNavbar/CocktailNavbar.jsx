@@ -6,7 +6,7 @@ const CocktailNavbar = () => {
         <nav className='h-20 flex items-center bg-lime-200'>
             <div className='flex justify-between items-center mx-auto w-[85vw] max-w-[1170px]'>
                 <Link to='/15-cocktails'>
-                    <img src='/CocktailLogo.svg' alt='cocktail db logo' className='w-48'/>
+                    <img src={'/React-Mini-Projects/CocktailLogo.svg'} alt='cocktail db logo' className='w-48'/>
                 </Link>
                 <ul className='flex items-center'>
                     <li>
